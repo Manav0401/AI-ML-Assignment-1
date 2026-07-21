@@ -8,9 +8,24 @@ To develop a Multiple Linear Regression model that predicts medical insurance ch
 
 ## Dataset
 
-Medical Cost Personal Insurance Dataset
+**Dataset Name:** Medical Cost Personal Insurance Dataset
 
-https://www.kaggle.com/datasets/mirichoi0218/insurance
+**Source:** https://www.kaggle.com/datasets/mirichoi0218/insurance
+
+> **Note:** The dataset is **not included** in this repository. Please download the `insurance.csv` file from the above link and place it inside the `dataset` folder before running the project.
+
+### Project Structure
+
+```
+ASSIGNMENT-1/
+│
+├── dataset/
+│   └── insurance.csv
+│
+├── Assignment-1.py
+├── actual_vs_predicted.png
+└── README.md
+```
 
 ---
 
@@ -35,7 +50,7 @@ https://www.kaggle.com/datasets/mirichoi0218/insurance
 6. Train a Multiple Linear Regression model.
 7. Predict insurance charges.
 8. Evaluate the model using MAE, MSE, and R² Score.
-9. Create an Actual vs Predicted scatter plot for model        visualization.
+9. Create an Actual vs Predicted scatter plot for model visualization.
 
 ---
 
@@ -49,8 +64,8 @@ https://www.kaggle.com/datasets/mirichoi0218/insurance
 
 ## Observations
 
-1. The model achieved an R² score of 0.7836, indicating that it explains approximately 78% of the variation in medical insurance charges.
-2. The MAE of 4181.19 shows that the predicted insurance charges are reasonably close to the actual values on average.
+1. The model achieved an R² score of **0.7836**, indicating that it explains approximately **78%** of the variation in medical insurance charges.
+2. The MAE of **4181.19** shows that the predicted insurance charges are reasonably close to the actual values on average.
 3. The scatter plot indicates that most predictions follow the overall trend of the actual charges, although some higher insurance charges show larger prediction errors.
 
 ---
@@ -63,12 +78,33 @@ https://www.kaggle.com/datasets/mirichoi0218/insurance
 
 ## Conclusion
 
-The current project has successfully implemented Multiple Linear Regression for the prediction of medical insurance charges from different factors like age, sex, Body Mass Index, number of children, smoking, and the region of a person. To begin with, the dataset was preprocessed through feature encoding and splitting into train and test datasets before implementing a machine learning algorithm. The R² score obtained from the implementation of the model has been 0.7836, implying that the implemented model has good predictive power, which means that the model explains quite a bit of variance of the medical insurance charges. This has shown that smoking, age, and BMI affect medical insurance prices strongly. However, the limitation of this model is that it assumes linearity between variables.
+The current project has successfully implemented Multiple Linear Regression for the prediction of medical insurance charges from different factors like age, sex, Body Mass Index, number of children, smoking, and the region of a person. To begin with, the dataset was preprocessed through feature encoding and splitting into train and test datasets before implementing a machine learning algorithm. The R² score obtained from the implementation of the model has been  **0.7836**, implying that the implemented model has good predictive power, which means that the model explains quite a bit of variance of the medical insurance charges. This has shown that smoking, age, and BMI affect medical insurance prices strongly. However, the limitation of this model is that it assumes linearity between variables.
+
+---
+
+## How to Run
+
+1. Clone this repository.
+2. Download the dataset from the Kaggle link provided above.
+3. Place the `insurance.csv` file inside the `dataset` folder.
+4. Install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+5. Run the project:
+
+```bash
+python Assignment-1.py
+```
 
 ---
 
 ## Author
 
-Manav M George
+**Manav M George**
+
 Integrated M.Tech (Artificial Intelligence)
+
 VIT Bhopal University
